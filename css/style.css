@@ -1,0 +1,116 @@
+:root{
+    --primary-color:#965A2B;
+    --secondary-color: #A08E78;
+    --light-color: #f4f4f4;
+    --dark-color: #5f2b03;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;    
+    color: var(--light-color);
+}
+html{
+    background: url("../images/backgrund.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.container{
+    width: 600px;   
+    background: rgba(0, 0, 0, 0.425);
+    color: #f4f4f4;
+    margin: 10% 0%;
+    border-radius: 2%;
+    line-height: 1rem;
+    
+    
+}
+.container h1{
+    text-align: center;
+    padding: 5% 0;
+    margin-bottom:15%; 
+}
+.print{
+    text-align: center;
+}
+button{
+    padding: 2% 10px;
+    background: var(--dark-color);
+    border-radius: 10px;
+    margin: 5% 0;
+    align-self: center;
+}
+.buttn{
+    background-color: var(--dark-color);
+    width: 60%;
+    color: var(--light-color);
+    font-size: 16px;   
+    border-radius: 5px;
+    margin-left: 2px;
+    margin-bottom: 5%;
+    padding: 2% 5%;
+    align-items: center;
+    box-shadow: none;
+
+}
+.flex1, .flex{
+    display:flex;
+    font-size: 20px;
+    gap: 20%;
+    padding: 2% 3%;
+}
+input{
+    padding:2% 5%;
+    width: 50%;
+    color: black;
+    border-radius: 5px;
+    
+}
+input[type=number]{
+    width: 20%;
+    padding: 2% 0;
+    border-radius: 5px;
+}
+li{      
+    padding: 10% 5%;
+}
+ol {
+    margin-left: 10px;
+    list-style:none;
+}
+.row{
+    display: flex;
+    padding: 0 15%;
+    gap: 5%;
+}
+
+
+@media (max-width: 768px){
+    .flex1{
+        display: inline;
+    }
+    .container{      
+      margin: 5% 12.5%;
+    }
+    .row{
+        display: flex;
+        padding: 0 15%;
+        gap: 35%;
+    }
+    
+  }
+  @media (max-width: 500px){
+    .flex1{
+        display: inline;
+    }
+    .container{      
+      margin: 8% 3% 5% 3%;
+    }
+    .row{
+        display: flex;
+        padding: 0 15%;
+        gap: 35%;
+    }
+  }

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <title>Shopping List || Make active shopping list online</title>
+    <link rel="shortcut icon" href="favicon.ico">
+</head>
+<body>
+    <div class="bg">
+        <div class="flex1">
+            <div class="container">
+            <h1>Shopping list</h1>
+            <div class="row">
+                <h3>List items</h3>
+                <h3>Quantity</h3>
+
+            </div>
+            <ol type="none">
+                <li>                    
+                    <input type="text" name="item" id="item" onfocus="this.value=''">
+                    <input type="number" id="quant" value="0" onfocus="this.value=''" />
+                    <input type="button" class="buttn" value="Add" onclick="add_element()"> <br/>
+                    <input type="button" class="buttn" value="Remove Last Item" onclick="remove_elementE()"> <br/>
+                    <input type="button" class="buttn" value="Remove First Item" onclick="remove_elementB()"> <br/>
+                    <input type="button" class="buttn" value="Replace Item 3" onclick="replace()"> 
+                <li>                    
+                
+            </ol>   
+            <div class="print">
+                <button onclick="disp()">Print List</button> 
+                <button onclick="disp1()">Print Removed List</button> 
+            </div> 
+
+            </div>
+
+            <!--List Display-->
+            <div class= container>
+                <div class="flex">
+                    <p>Items on list</p> 
+                    <p>Removed Items</p> 
+                </div>
+                <div class="flex">
+                    <div id="printList"></div>
+                <div id="printList1"></div>
+                </div>
+                
+            </div>
+        </div>
+        
+           
+            
+            
+        </div>
+    
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
